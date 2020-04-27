@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		13784FF32456C32000090CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13784FF12456C32000090CC0 /* LaunchScreen.storyboard */; };
 		13784FFB2456C79E00090CC0 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13784FFA2456C79E00090CC0 /* SelectionViewController.swift */; };
 		13784FFD2456C8B700090CC0 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13784FFC2456C8B700090CC0 /* DatabaseService.swift */; };
+		13C92DD42456CD070038038A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13C92DD32456CD070038038A /* GoogleService-Info.plist */; };
+		13C92DD62456D14F0038038A /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C92DD52456D14F0038038A /* Guitar.swift */; };
 		614288290FC75D603B209AC3 /* Pods_GuitarUploader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D323B82E3E3E37981754173 /* Pods_GuitarUploader.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		13784FF42456C32000090CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13784FFA2456C79E00090CC0 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		13784FFC2456C8B700090CC0 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		13C92DD32456CD070038038A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		13C92DD52456D14F0038038A /* Guitar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
 		1D323B82E3E3E37981754173 /* Pods_GuitarUploader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarUploader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		540461BC3DB1B6523B69AB6F /* Pods-GuitarUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarUploader.release.xcconfig"; path = "Target Support Files/Pods-GuitarUploader/Pods-GuitarUploader.release.xcconfig"; sourceTree = "<group>"; };
 		A9EBE611DDAC69762562BE55 /* Pods-GuitarUploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarUploader.debug.xcconfig"; path = "Target Support Files/Pods-GuitarUploader/Pods-GuitarUploader.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,12 +73,14 @@
 			children = (
 				13784FE62456C31D00090CC0 /* AppDelegate.swift */,
 				13784FE82456C31D00090CC0 /* SceneDelegate.swift */,
-				13784FFC2456C8B700090CC0 /* DatabaseService.swift */,
+				13C92DD52456D14F0038038A /* Guitar.swift */,
 				13784FEA2456C31D00090CC0 /* MainViewController.swift */,
 				13784FFA2456C79E00090CC0 /* SelectionViewController.swift */,
 				13784FEC2456C31D00090CC0 /* Main.storyboard */,
 				13784FEF2456C32000090CC0 /* Assets.xcassets */,
+				13C92DD32456CD070038038A /* GoogleService-Info.plist */,
 				13784FF12456C32000090CC0 /* LaunchScreen.storyboard */,
+				13784FFC2456C8B700090CC0 /* DatabaseService.swift */,
 				13784FF42456C32000090CC0 /* Info.plist */,
 			);
 			path = GuitarUploader;
@@ -94,7 +100,6 @@
 				A9EBE611DDAC69762562BE55 /* Pods-GuitarUploader.debug.xcconfig */,
 				540461BC3DB1B6523B69AB6F /* Pods-GuitarUploader.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13784FF32456C32000090CC0 /* LaunchScreen.storyboard in Resources */,
+				13C92DD42456CD070038038A /* GoogleService-Info.plist in Resources */,
 				13784FF02456C32000090CC0 /* Assets.xcassets in Resources */,
 				13784FEE2456C31D00090CC0 /* Main.storyboard in Resources */,
 			);
@@ -216,6 +222,7 @@
 				13784FEB2456C31D00090CC0 /* MainViewController.swift in Sources */,
 				13784FFD2456C8B700090CC0 /* DatabaseService.swift in Sources */,
 				13784FFB2456C79E00090CC0 /* SelectionViewController.swift in Sources */,
+				13C92DD62456D14F0038038A /* Guitar.swift in Sources */,
 				13784FE72456C31D00090CC0 /* AppDelegate.swift in Sources */,
 				13784FE92456C31D00090CC0 /* SceneDelegate.swift in Sources */,
 			);

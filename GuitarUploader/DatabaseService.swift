@@ -7,11 +7,19 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 class DatabaseService {
     
     static let acousticCollection = "Acoustic"
     static let electricCollection = "Electric"
     static let acousticElectricCollection = "Acoustic-Electric"
+    
+    private let db = Firestore.firestore()
+    static let shared = DatabaseService()
+    
+    public func createAcoustic(guitar: String, completion: @escaping (Result<Bool, Error>) -> ()){
+        
+    }
     
 }
