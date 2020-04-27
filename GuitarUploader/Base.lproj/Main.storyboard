@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="plg-Ry-Bil">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Please Select-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="GuitarUploader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select type of guitar you're uploading below" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5i-u9-ZKd">
+                                <rect key="frame" x="20" y="140" width="374" height="125.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTG-pP-RZr">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZ7-iv-icX">
+                                <rect key="frame" x="47" y="564" width="320" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Next Page"/>
+                                <connections>
+                                    <action selector="nextPageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CuH-MW-hUS"/>
+                                    <segue destination="C1A-zY-o2V" kind="show" id="Mad-Rb-ea7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fZ7-iv-icX" firstAttribute="top" secondItem="iTG-pP-RZr" secondAttribute="bottom" constant="8" id="71J-KT-igx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g5i-u9-ZKd" secondAttribute="trailing" constant="20" id="98L-Vq-0Bx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fZ7-iv-icX" secondAttribute="trailing" constant="47" id="CN9-aL-yMZ"/>
+                            <constraint firstItem="g5i-u9-ZKd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jnl-JH-V6K"/>
+                            <constraint firstItem="fZ7-iv-icX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="cIB-v4-TC4"/>
+                            <constraint firstItem="iTG-pP-RZr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dio-Wf-xFp"/>
+                            <constraint firstItem="g5i-u9-ZKd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hhi-xn-oFn"/>
+                            <constraint firstItem="iTG-pP-RZr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="io9-u9-hGm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Please Select" id="Zme-lg-om6"/>
+                    <connections>
+                        <outlet property="pickerView" destination="iTG-pP-RZr" id="AOn-UF-L0i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="114.50892857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lNk-WI-apk">
+            <objects>
+                <viewController id="C1A-zY-o2V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m6w-5A-Aq7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uIb-ad-KXO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sAB-4k-ZaL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQG-ue-0Sy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OrG-cZ-bGf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="plg-Ry-Bil" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="m82-aB-RgH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aBd-aa-viT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PB0-9K-GKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+</document>
