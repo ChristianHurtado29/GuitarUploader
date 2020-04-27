@@ -15,6 +15,7 @@
 		13784FF32456C32000090CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13784FF12456C32000090CC0 /* LaunchScreen.storyboard */; };
 		13784FFB2456C79E00090CC0 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13784FFA2456C79E00090CC0 /* SelectionViewController.swift */; };
 		13784FFD2456C8B700090CC0 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13784FFC2456C8B700090CC0 /* DatabaseService.swift */; };
+		614288290FC75D603B209AC3 /* Pods_GuitarUploader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D323B82E3E3E37981754173 /* Pods_GuitarUploader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		13784FF42456C32000090CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13784FFA2456C79E00090CC0 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		13784FFC2456C8B700090CC0 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		1D323B82E3E3E37981754173 /* Pods_GuitarUploader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarUploader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		540461BC3DB1B6523B69AB6F /* Pods-GuitarUploader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarUploader.release.xcconfig"; path = "Target Support Files/Pods-GuitarUploader/Pods-GuitarUploader.release.xcconfig"; sourceTree = "<group>"; };
+		A9EBE611DDAC69762562BE55 /* Pods-GuitarUploader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarUploader.debug.xcconfig"; path = "Target Support Files/Pods-GuitarUploader/Pods-GuitarUploader.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614288290FC75D603B209AC3 /* Pods_GuitarUploader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				13784FE52456C31D00090CC0 /* GuitarUploader */,
 				13784FE42456C31D00090CC0 /* Products */,
+				6DB094A9117D1646CA3D8A55 /* Pods */,
+				24B21C1AA5909DB865EA87D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = GuitarUploader;
 			sourceTree = "<group>";
 		};
+		24B21C1AA5909DB865EA87D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D323B82E3E3E37981754173 /* Pods_GuitarUploader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DB094A9117D1646CA3D8A55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9EBE611DDAC69762562BE55 /* Pods-GuitarUploader.debug.xcconfig */,
+				540461BC3DB1B6523B69AB6F /* Pods-GuitarUploader.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13784FF72456C32000090CC0 /* Build configuration list for PBXNativeTarget "GuitarUploader" */;
 			buildPhases = (
+				B5DBE3867ED1F09A14C867DD /* [CP] Check Pods Manifest.lock */,
 				13784FDF2456C31D00090CC0 /* Sources */,
 				13784FE02456C31D00090CC0 /* Frameworks */,
 				13784FE12456C31D00090CC0 /* Resources */,
+				CDC1113738D365174CE7E5C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5DBE3867ED1F09A14C867DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitarUploader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDC1113738D365174CE7E5C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarUploader/Pods-GuitarUploader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarUploader/Pods-GuitarUploader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuitarUploader/Pods-GuitarUploader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13784FDF2456C31D00090CC0 /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		13784FF82456C32000090CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9EBE611DDAC69762562BE55 /* Pods-GuitarUploader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +378,7 @@
 		};
 		13784FF92456C32000090CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540461BC3DB1B6523B69AB6F /* Pods-GuitarUploader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
