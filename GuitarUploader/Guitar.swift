@@ -14,3 +14,12 @@ struct Guitar {
     let year: Int
     let picture: String
 }
+
+extension Guitar {
+    init(_ dictionary: [String: Any]) {
+        self.brand = dictionary["brand"] as? String ?? "no brand"
+        self.model = dictionary["model"] as? String ?? "no model"
+        self.year = dictionary["year"] as? Int ?? 2000
+        self.picture = dictionary["dictionary"] as? String ?? "No URL"
+    }
+}
