@@ -73,6 +73,7 @@
 			children = (
 				13784FE62456C31D00090CC0 /* AppDelegate.swift */,
 				13784FE82456C31D00090CC0 /* SceneDelegate.swift */,
+				13784FFC2456C8B700090CC0 /* DatabaseService.swift */,
 				13C92DD52456D14F0038038A /* Guitar.swift */,
 				13784FEA2456C31D00090CC0 /* MainViewController.swift */,
 				13784FFA2456C79E00090CC0 /* SelectionViewController.swift */,
@@ -80,7 +81,6 @@
 				13784FEF2456C32000090CC0 /* Assets.xcassets */,
 				13C92DD32456CD070038038A /* GoogleService-Info.plist */,
 				13784FF12456C32000090CC0 /* LaunchScreen.storyboard */,
-				13784FFC2456C8B700090CC0 /* DatabaseService.swift */,
 				13784FF42456C32000090CC0 /* Info.plist */,
 			);
 			path = GuitarUploader;

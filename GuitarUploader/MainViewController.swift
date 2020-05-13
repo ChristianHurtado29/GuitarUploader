@@ -22,6 +22,8 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func nextPageButton(_ sender: UIButton) {
+        let selVC = SelectionViewController()
+        selVC.guitarType = selectedType
         
         
     }

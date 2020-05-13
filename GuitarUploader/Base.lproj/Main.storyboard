@@ -63,14 +63,36 @@
                     <view key="view" contentMode="scaleToFill" id="m6w-5A-Aq7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select brand:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amW-Dc-ptK">
+                                <rect key="frame" x="20" y="140" width="374" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bk-9q-8cY">
+                                <rect key="frame" x="0.0" y="183" width="414" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="z4h-C0-YPV"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Bk-9q-8cY" firstAttribute="centerX" secondItem="amW-Dc-ptK" secondAttribute="centerX" id="BNT-Jn-Mbk"/>
+                            <constraint firstItem="1Bk-9q-8cY" firstAttribute="leading" secondItem="uIb-ad-KXO" secondAttribute="leading" id="OLU-Ut-tqC"/>
+                            <constraint firstItem="amW-Dc-ptK" firstAttribute="top" secondItem="uIb-ad-KXO" secondAttribute="top" id="TmU-8X-9dW"/>
+                            <constraint firstItem="amW-Dc-ptK" firstAttribute="leading" secondItem="uIb-ad-KXO" secondAttribute="leading" constant="20" id="g1H-ZE-da7"/>
+                            <constraint firstItem="1Bk-9q-8cY" firstAttribute="top" secondItem="amW-Dc-ptK" secondAttribute="bottom" constant="8" id="hrz-eR-sjr"/>
+                            <constraint firstItem="uIb-ad-KXO" firstAttribute="trailing" secondItem="amW-Dc-ptK" secondAttribute="trailing" constant="20" id="jdB-NO-jaT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uIb-ad-KXO"/>
                     </view>
                     <navigationItem key="navigationItem" id="sAB-4k-ZaL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQG-ue-0Sy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="115"/>
+            <point key="canvasLocation" x="1931.8840579710147" y="114.50892857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OrG-cZ-bGf">

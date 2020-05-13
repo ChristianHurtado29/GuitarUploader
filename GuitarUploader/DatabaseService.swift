@@ -19,7 +19,10 @@ class DatabaseService {
     static let shared = DatabaseService()
     
     public func createAcoustic(guitar: String, completion: @escaping (Result<Bool, Error>) -> ()){
-        
+//        db.collection(DatabaseService.acousticCollection).document().setData("brand":"",
+//            "series":"",
+//            "year":"",
+//            "":"")
     }
     
 }
